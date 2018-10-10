@@ -1,163 +1,227 @@
-*{
+* {
     margin: 0;
-    
+
 }
-#menu{
+
+#wrapper {
+    width: 100vw;
+    height: 100vh;
+}
+#welcome {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.97);
+    z-index: 99;
+    transition: ease 1.5s;
+    z-index: 100;
+
+}
+
+#menu {
     position: fixed;
     width: 100vw;
     height: 100vh;
+    left: -150%;
     background-color: whitesmoke;
     visibility: hidden;
-    opacity: 0;
-    transition: ease 0.7s;
-    z-index: 99;
+    transition: ease 0.8s;
+    z-index: 200;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
 }
-#menuClose{
+@font-face {
+    font-family: bizurk;
+    src: url("fonts/Bisurk-Regular.ttf");
+    font-family: metria;
+    src: url("fonts/metria.ttf");
+}
+
+#menuClose {
     position: absolute;
     top: 0;
     right: 0;
     width: 20px;
     height: 20px;
-    margin: 1.8% 5.2%;
+    margin: 2.3% 5.2%;
     background-image: url(images/interactive-icons/close.png);
     background-size: 100% 100%;
     cursor: pointer;
 }
 
-.optionsContainer{
-    width: 1000px;
-    height:250px;
+.optionsContainer {
+    width: 600px;
+    height: 150px;
     display: flex;
     flex-direction: row;
 }
+
 .menuOptions {
     width: 25%;
     height: 100%;
-    background-color: black;
-}
-#homeOption{
-    display: block;
-    width: 100%;
-    height: 100%;
-    background-color: gold;
-}
-#aboutOption{
-    display: block;
-    width: 100%;
-    height: 100%;
-    background-color: blue;
-}
-#educationOption{
-    display: block;
-    width: 100%;
-    height: 100%;
-    background-color: green;
+    transition: ease 0.4s;
 }
 
-#experienceOption{
-    display: block;
-    width: 100%;
-    height: 100%;
-    background-color: red;
-}
-#languagesOption{
-    display: block;
-    width: 100%;
-    height: 100%;
-    background-color: yellow;
-}
-#projectsOption{
-    display: block;
-    width: 100%;
-    height: 100%;
-    background-color: pink;
-
-}
-#contactOption{
-    display: block;
-    width: 100%;
-    height: 100%;
-    background-color: slateblue;
-}
-#otherWebsites{
-    display: block;
-    width: 100%;
-    height: 100%;
-    background-color: brown;
+.menuOptions:hover {
+    transform: scale(1.2);
+    /* box-shadow:0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
 }
 
+#homeOption {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-image: url(images/menu-icons/home-icon.png);
+    background-size: cover;
+}
 
-#parrallax{
+#aboutOption {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-image: url(images/menu-icons/about-icon.png);
+    background-size: cover;
+}
+
+#educationOption {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-image: url(images/menu-icons/education-icon.png);
+    background-size: cover;
+}
+
+#experienceOption {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-image: url(images/menu-icons/experience-icon.png);
+    background-size: cover;
+}
+
+#languagesOption {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-image: url(images/menu-icons/languages-icon.png);
+    background-size: cover;
+}
+
+#projectsOption {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-image: url(images/menu-icons/projects-icon.png);
+    background-size: cover;
+
+}
+
+#contactOption {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-image: url(images/menu-icons/contact-icon.png);
+    background-size: cover;
+}
+
+#otherWebsites {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-image: url(images/menu-icons/other-websites-icon.png);
+    background-size: cover;
+
+}
+
+#parrallax {
     width: 100vw;
     height: 100vh;
     position: fixed;
-    background-image: url(images/about/portrait2.jpg);
+    background-image: url(images/about/portrait3.jpg);
     background-size: cover;
     z-index: -1;
 }
-#wrapper{
-    width: 100vw;
-    height: 100vh;
-}
 
-nav{
+
+nav {
     width: 100%;
     height: 9%;
     background-color: transparent;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
     position: fixed;
     top: 0;
+    z-index: 99;
+    
+    
 }
-#emblem{
-    width: 45px;
-    height: 45px;
-    background-image: url(images/logo-emblems/tiefighterwhite.png);
-    background-size: 100% 100%;
-    margin-left: 4%;
-    transition: ease 0.4s;
-}
-#emblem a{
+#navbar-container{
     width: 100%;
     height: 100%;
-    display: block; 
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
 }
-#emblem:hover{
-    transform: scale(1.2);
+
+#name{
+    width: 20%;
+    height: 45%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: solid white 1px; */
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    letter-spacing: 3px;
+    transition: ease 1.2s;
+    visibility: hidden;
+    opacity: 0;
+    
+
 }
+
+
+
+
 #menubars {
-    width: 28px;
-    height: 18px;
+    width: 30px;
+    height: 30px;
     margin-right: 5%;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
     flex-direction: column;
     cursor: pointer;
-}
-.bars {
-    width: 100%;
-    height: 10%;
-    background-color: white;
+    position: absolute;
+    right: 0;
+
     
 }
 
-#banner{
+.bars {
+    width: 30px;
+    height: 5px;
+    background-color: white;
+
+
+
+}
+
+#banner {
     width: 100%;
-    height: 100%;
-    background-image: url(images/welcome-banner/mountain.jpg);
+    height: 63%;
+    background-image: url(images/welcome-banner/8.jpg);
     background-size: cover;
     display: flex;
     justify-content: center;
     align-items: center;
+    
 }
 
-#banner div {
+#banner-content {
     font-size: 100px;
     font-family: sans-serif;
     font-weight: bold;
@@ -165,33 +229,89 @@ nav{
     border: solid white 1.5px;
     padding: 20px 50px;
     color: white;
-}
-#about{
-    width: 100%;
-    height: 100%;
-    background-color: transparent;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
+    display: none;
 }
 
-#aboutContent{
+#about {
+    width: 100%;
+    height: 70%;
+    background-color: lightgray;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    position: relative;
+    /* background-image: url(images/about/12.jpg);
+    background-size: cover; */
+}
+#about-title{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 20%;
+    display: block;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 32px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0.5;
+}
+
+#about-text {
     width: 40%;
     height: 80%;
     margin-left: 7%;
-    color: white;
+    color: black;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 20px;
+    font-size: 16px;
+    font-weight: lighter;
     letter-spacing: 2px;
     display: flex;
     align-items: center;
     line-height: 30px;
-    
-    
 }
+#about-photo-res{
+    width: 30%;
+    height: 80%;
+    margin-right: 7%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    
+   }
+
+   #about-photo{
+       width: 250px;
+       height: 250px;
+       border-radius: 50%;
+       background-image: url(images/about/elie.jpeg);
+       background-size: cover;
+       background-position: center;
+   }
+
+   #resume-button{
+       width: 40%;
+       height: 9%;
+       border: black solid 1px;
+       font-family: Arial, Helvetica, sans-serif;
+       font-size: 12px;
+       background-color: transparent;
+       transition: ease 0.3s;
+       border-radius: 25px;
+
+   }
+   #resume-button:hover{
+        background-color: black;
+        color: white;
+   }
 
 
-#section{
+
+
+#section {
     width: 100%;
     height: 100%;
     background-color: black;

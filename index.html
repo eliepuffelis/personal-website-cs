@@ -8,36 +8,49 @@
     <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
     <script src="main.js"></script>
 </head>
-<body>
+<body >
     <div id="wrapper">
+        <div id="welcome"></div>
         <div id="menu">
             <div id="menuClose" onclick="closeMenu()"></div>
             <div class="optionsContainer">
-                <div class="menuOptions"><a href="" id="homeOption"></a></div>
-                <div class="menuOptions"><a href="" id="aboutOption"></a></div>
-                <div class="menuOptions"><a href="" id="educatoinOpton"></a></div>
-                <div class="menuOptions"><a href="" id="experienceOption"></a></div>
+                <div class="menuOptions"><a onclick="closeMenu()" href="#wrapper" id="homeOption"></a></div>
+                <div class="menuOptions"><a onclick="closeMenu()" href="#wrapper" id="aboutOption"></a></div>
+                <div class="menuOptions"><a onclick="closeMenu()" href="#wrapper" id="educationOption"></a></div>
+                <div class="menuOptions"><a onclick="closeMenu()" href="#wrapper" id="experienceOption"></a></div>
             </div>
             <div class="optionsContainer">
-                <div class="menuOptions"><a href="" id="languagesOption"></a></div>
-                <div class="menuOptions"><a href="" id="projectsOption"></a></div>
-                <div class="menuOptions"><a href="" id="contactOption"></a></div>
-                <div class="menuOptions"><a href="" id="otherWebsites"></a></div>
+                <div class="menuOptions"><a onclick="closeMenu()" href="#wrapper" id="languagesOption"></a></div>
+                <div class="menuOptions"><a onclick="closeMenu()" href="#wrapper" id="projectsOption"></a></div>
+                <div class="menuOptions"><a onclick="closeMenu()" href="#wrapper" id="contactOption"></a></div>
+                <div class="menuOptions"><a onclick="closeMenu()" href="#wrapper" id="otherWebsites"></a></div>
             </div>
 
         </div>
+        <div id="parrallax"></div>
         
         <nav id="navbar">
-            <div id="emblem"><a href="index.html"></a></div>
+            <div id="navbar-container">
+           <div id="name">E L I E   P U F F E L I S</div>
             <div id="menubars" onclick="openMenu()">
                 <div class="bars"></div>
                 <div class="bars"></div>
                 <div class="bars"></div>
             </div>
+        </div>
+            
         </nav>
-        <div id="banner"><div>Elie Puffelis</div></div>
+        <div id="banner"><div id="banner-content"></div></div>
         <div id="about">
-        <div id="aboutContent">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam labore nulla distinctio veritatis vero praesentium soluta maxime. Vitae, earum. Veniam doloribus unde obcaecati praesentium necessitatibus vel tenetur quam numquam excepturi pariatur! Omnis id, aspernatur hic dolorum explicabo accusantium dolor, delectus similique, nam voluptas qui sed officia recusandae deserunt in quas quis voluptatem autem culpa voluptate debitis saepe repellat odit molestias. Quam, eveniet neque. Commodi voluptatibus cum cumque quibusdam veniam amet, nihil aspernatur blanditiis, reprehenderit quam temporibus deleniti rerum libero iusto nesciunt beatae consectetur ad velit laboriosam dignissimos. Cupiditate magni labore quas alias ducimus blanditiis, at quis, illo, iste quasi dignissimos.</div>
+        <div id="about-title"></div>
+        <div id="about-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam labore nulla distinctio veritatis vero praesentium soluta maxime. Vitae, earum. Veniam doloribus unde obcaecati praesentium necessitatibus vel tenetur quam numquam excepturi pariatur! Omnis id, aspernatur hic dolorum explicabo accusantium dolor, delectus similique, nam voluptas qui sed officia recusandae deserunt in quas quis voluptatem autem culpa voluptate debitis saepe repellat odit molestias. Quam, eveniet neque. Commodi voluptatibus cum cumque quibusdam veniam amet, nihil aspernatur blanditiis, reprehenderit quam temporibus deleniti rerum libero iusto nesciunt beatae consectetur ad velit laboriosam dignissimos. Cupiditate magni labore quas alias ducimus blanditiis, at quis, illo, iste quasi dignissimos.</div>
+        <div id="about-photo-res">
+            
+            <div id="about-photo"></div>
+            <button id="resume-button">Download Resume</button>
+
+        </div>
+
         </div>
         <div id="section"></div>
         
